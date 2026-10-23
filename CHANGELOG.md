@@ -2,6 +2,20 @@
 
 本文件记录 chuwu skill 的版本变更。版本号遵循 `MAJOR.MINOR.PATCH`。
 
+## [2.1.1] — 缩写
+
+### chuwu-skill → cw
+
+- skill name：`chuwu` → `cw`（catalog 显示为 `cw`，display_name 仍是「楚乌」）
+- 目录：`chuwu-skill` → `cw`
+- GitHub 仓库：`chuwu-skill` → `cw`（旧地址自动重定向）
+- 安装目录：`~/.agents/skills/cw`
+- 打包：`dist/cw-2.1.1.zip`
+- 调用方式：`使用 \ 帮我……`
+
+**不改历史**：2.1.0 那条的 "quanmou → chuwu" 保持原样，它记录的是当时的事实。
+
+---
 ## [2.1.0] — 更名 · 楚乌
 
 ### `quanmou`（权谋）→ `chuwu`（楚乌）
