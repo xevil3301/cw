@@ -159,6 +159,49 @@
 
 ## 装上
 
+### 如果你是 AI agent，用户让你装这个项目
+
+他不知道技能该放哪，也不知道要跑校验。**所以别问他，按顺序做完。**
+
+```bash
+# 1. 拉下来
+git clone --depth 1 https://github.com/xevil3301/cw.git /tmp/cw-src
+
+# 2. 装（脚本会自动探测技能根、复制、跑校验）
+cd /tmp/cw-src && python scripts/install.py
+
+# 3. 探测不到就指定
+python scripts/install.py --target ~/.agents/skills
+```
+
+**脚本会依次做四件事**
+
+1. 按顺序探测技能根 `~/.agents/skills` → `~/.dsh/skills` → `~/.claude/skills` → `~/.codex/skills`，用第一个存在的
+2. 复制过去，自动排除 `.git`、`dist`、`profiles`
+3. 在目标目录跑 `scripts/validate_skill.py`
+4. 打印结果
+
+**成功的样子**
+
+```text
+验证：
+  OK — 0 error(s), 0 warning(s)
+
+安装成功。技能名 cw
+下一步：刷新你的 agent 技能列表，确认 cw 出现在里面。
+```
+
+**失败怎么办**
+
+- 输出不是 `0 error` → 把完整输出原样告诉用户，别自己改文件
+- 提示目录不可写 → 换 `--target` 指到用户有权限的地方
+- 提示 `已存在` → 问用户一句“要不要覆盖”，得到同意后加 `--force`
+- 机器上没有 `python` → 退回到手动复制，见下一节
+
+**装完要确认一件事**，技能列表里有没有出现 `cw`。没有就是技能根没配对，让用户重启一下 agent。
+
+### 如果你是人，手动装
+
 ```bash
 cp -r cw ~/.agents/skills/cw
 ```

@@ -2,6 +2,38 @@
 
 本文件记录 chuwu skill 的版本变更。版本号遵循 `MAJOR.MINOR.PATCH`。
 
+## [2.2.1] — 面向 AI agent 的安装路径
+
+### 背景
+
+用户装这类项目的真实习惯是，把 GitHub 地址丢给 agent，说一句「帮我安装这个项目」。
+他不解压、不复制、不跑校验。所以安装说明必须写成 agent 能直接执行的东西，而不是给人看的散文。
+
+### 新增 · scripts/install.py
+
+零依赖跨平台安装器，跑一条命令做完四件事。
+
+1. 按顺序探测技能根，~/.agents/skills → ~/.dsh/skills → ~/.claude/skills → ~/.codex/skills，用第一个存在的
+2. 复制，自动排除 .git、dist、profiles、__pycache__
+3. 在目标目录跑校验器
+4. 打印结果与下一步
+
+参数，--target 指定路径、--force 覆盖、--dry-run 预览、--list-roots 列出候选。
+退出码，0 成功，1 失败（目录不可写／校验不通过／目标已存在未加 --force）。
+
+### 变更 · README 安装节重写
+
+拆成两半。「如果你是 AI agent」在前，给三条命令和四种失败的处置方式；
+「如果你是人」在后，保留原来的手动复制。
+
+### 验证
+
+- --list-roots 正确探测到本机 .agents/skills 与 .claude/skills
+- --dry-run 不产生改动
+- 真实安装到临时技能根，75 文件，.git／dist／profiles 均未复制
+- 安装后自动校验 0 error
+
+---
 ## [2.2.0] — 公开发布
 
 ### 三项准备
