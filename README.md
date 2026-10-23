@@ -257,10 +257,6 @@ It's good at turning a mess into decidable parts. It can't give you courage.
 
 ---
 
-**楚乌**是乌鸦的古称。《说文》说，雅，楚乌也。《广雅》说，纯黑反哺者，谓之乌。
-
-报丧的是它，反哺的也是它。凶名在外，孝行在内。
-
 ## 许可
 
 私有未公开。见 `LICENSE`。
