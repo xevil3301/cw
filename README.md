@@ -257,6 +257,12 @@ It's good at turning a mess into decidable parts. It can't give you courage.
 
 ---
 
+## 关于 logo
+
+logo 由 AI 生成（豆包），经裁切、留白与排版处理。
+
+按《人工智能生成合成内容标识办法》，这里作出说明。
+
 ## 许可
 
-私有未公开。见 `LICENSE`。
+CC BY-NC 4.0。见 `LICENSE`。
