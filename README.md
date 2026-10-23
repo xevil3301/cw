@@ -18,54 +18,38 @@
 
 ---
 
-## 它解决什么
+## 它解决什么问题
 
-你带着一个具体的局面来，它先判断这局该不该打，再定用多大力，最后给你几步动作和一句能直接发出去的话。
+生活里有些事，讲道理没用，撕破脸又不值。
 
-它管的事大概六类。被占了便宜但说不出哪里不对，要谈条件不知道开多少退多少，感觉被拿捏了说不清哪里不对，手里没牌对方却比你强很多，已经输了不知道先做哪件事，还有想让人按你的意思动。
+你被占了便宜，但说不出哪里不对。你想谈个条件，不知道开多少、退多少。你觉得有人在拿捏你，可每次说出口都像自己想多了。
 
-每一类的答案都不一样。有的局看着憋屈，其实是散地，不该打。有的局看着没戏，但你手里有张牌自己没发现。
+这些事看着零散，其实是一类。都涉及另一个人，都涉及你手里有多少可换的东西，都涉及你愿意付出多少代价。
 
-有三样它不给。不给你「要相信自己」这种话，不替你做决定，不保证你赢。
+楚乌就是拿来处理这类事的。
 
----
+你给它一个具体的局面，它会先判断这件事值不值得动、能推到什么程度，然后给你几步今天就能做的动作，和一句能直接说出口的话。
 
-## 系统架构
+不是「你要学会沟通」这种话。是「这份材料别写成控告，写成情况反映，走挂号信，实名，结尾加一句如有不实本人担责」。
 
-内部是三套，按该不该打的顺序排。
-
-**谋攻**在最前面。能不战就不战，谈判、威慑、让对方自己退，这是成本最低的一条路。
-
-**造势**在中间。真要拿结果，就设计一个局，让对方在对你有利的那条路上自己走过去。
-
-**守形**在最后。已经出事了才用，先止血，再定性，最后才谈反不反打。
-
-顺序不能倒。**一上来就想怎么打的人，十次有六次在打一场不该打的仗。**
-
-每个系统底下挂着一套判断工具。九地判该不该打，五力算双方强弱，五档定用多大力，闸门拦不可逆的动作。
-
-```text
-问诊（你要什么）→ 认地（该不该打）→ 定档（用多大力）→ 过闸 → 动手
-```
-
-**守形不是认输**。先让自己打不倒，再等机会。
+有三样它不给。不给你「要相信自己」这种话，不替你做决定，也不保证结果。
 
 ---
 
-## 怎么问，怎么答
+## 它怎么工作
 
-### 第一步，你给一个场景
+### 你给一个局面
 
 四行就够，越具体越好。
 
 ```text
-谁：我和他分别是什么位置
-争什么：这件事真正抢的是钱、位置、面子，还是时间
+谁：我和对方分别是什么位置
+争什么：这件事真正在争的是钱、位置、面子，还是时间
 我想要什么结果
-我最怕什么（这条别省，它决定敢不敢用重手）
+我最怕什么（这条别省，它决定建议的力度）
 ```
 
-### 第二步，它会先问你三句
+### 它会先问你三句
 
 ```text
 1. 你最想要的结果是什么（具体到什么状态算成了）
@@ -73,20 +57,20 @@
 3. 如果没解决，你怎么办
 ```
 
-**为什么先问**。你说的问题，经常不是你要的诉求。有人说「我要让他付出代价」，问到第三句才发现，他其实想让这事赶紧过去。
+**为什么先问**。你说的问题，经常不是你要的诉求。有人说「我要让他付出代价」，问到第三句才发现，他其实想让这事赶紧过去。也有人说「我想回去」，问到第二句才承认，他想要的是补偿。
 
 **唯一例外**，你说今天必须定，它先给动作，再补问。
 
-### 第三步，它给四块
+### 它给四块
 
 | 块 | 内容 |
 |---|---|
-| **判断** | 一句话说清现在是什么局面，走哪条路 |
+| **判断** | 一句话说清现在是什么局面，该走哪条路 |
 | **动作** | 一到三步，具体到谁、什么时候、说什么 |
-| **话术** | 能直接复制发出去的句子，留台阶版＋不留台阶版 |
-| **代价** | 最坏结果，以及**代价最终落在谁身上** |
+| **话术** | 能直接复制发出去的句子，留台阶版和不留台阶版各一条 |
+| **代价** | 最坏结果，以及这笔代价最终落在谁身上 |
 
-### 第四步，你回来改
+### 你回来改
 
 ```text
 「我按你说的做了，他的反应是……」    → 它调整
@@ -94,63 +78,82 @@
 「这跟我实际情况不符，其实……」       → 它重算
 ```
 
-**这是唯一的迭代方式**。它不观察你，你告诉它结果。
+**这是它唯一的迭代方式**。它不观察你，你告诉它结果。
 
 ---
 
-## 力度五档
+## 内部是怎么组织的
 
-**用多大力，比说什么话重要。**
+三套东西，按顺序排。顺序不能倒。
 
-| 档 | 动作 | 可逆性 |
+先看有没有不费力就能解决的办法。谈判、示好、让对方自己改变主意，成本最低的一条路。
+
+如果没有，就设计一个局面，让对方在对他自己有利的那条路上，走到你要的位置。这一步需要你先算清楚他要什么、怕失去什么、时间紧不紧。
+
+如果已经出事了，那就先别让自己继续受损，把伤口按住，再谈别的。
+
+```text
+问清楚（你要什么）→ 判断（值不值得动）→ 定力度 → 过闸 → 动手
+```
+
+多数人不是败在手段不够，是败在顺序。一上来就想「怎么让他付出代价」的人，十次有六次把一件本来能谈的事，推到了没法收场。
+
+三套东西底下各挂着一组工具。哪一套该用、能用多大力、什么时候必须停手，都由前面那几步先定下来。
+
+---
+
+## 力度，能动到什么程度
+
+**能推到什么程度，比说什么话重要。**
+
+| 档 | 做什么 | 还能收回吗 |
 |---|---|---|
-| **1 不理** | 不回应、不表态 | 完全可逆 |
-| **2 一句话** | 划界、拒绝、要依据 | 可逆 |
-| **3 改结构** | 留痕、加见证人、改议程 | 基本可逆 |
-| **4A 对等反制** | 一次到位地还手，随即恢复 | 难可逆 |
-| **4B 抬高成本** | 不指控，只让他必须回应 | 可逆 |
-| **5 摊牌** | 最后通牒、断供、公开 | **不可逆** |
+| **1 不回应** | 不表态，先看 | 完全可以 |
+| **2 一句话** | 说清边界、拒绝、要依据 | 可以 |
+| **3 改结构** | 留痕、找见证人、改讨论的题目 | 基本可以 |
+| **4A 对等回应** | 一次到位地还手，随即恢复正常 | 很难 |
+| **4B 提高他的成本** | 不指责，只让他必须解释 | 可以 |
+| **5 摊牌** | 最后通牒、断供、公开 | **不能** |
 
-**四档以上要过闸**，过的不是「你有没有理」，是这三条。
+**四档往上要过两道门**，过的不是「你有没有理」，是这两条。
 
 ```text
 4A  证据 ＋ 第三方 ＋ 承受得起反扑
-4B  可指认的异常 ＋ 会要求他说明的场合 ＋ 反扑扛得住 ＋ 身上无把柄
+4B  可指认的异常 ＋ 会要求他解释的场合 ＋ 反扑扛得住 ＋ 身上没有把柄
 ```
 
-**为什么单列「反扑扛不扛得住」**，家庭关系里反扑常常是断供，平台那边是封店。这两种扛不住的时候，它不会让你硬上。
+**为什么单列「扛不扛得住」**。家庭关系里，对方的反扑常常是断掉经济来源。平台那边，是关店冻款。这两种扛不住的时候，它不会让你硬上，会先让你把退路造出来。
 
 ---
 
-## 九地，先判该不该打
+## 判断的依据
 
-| 地 | 你的处境 | 打法 |
-|---|---|---|
-| 散地 | 随时能抽身 | **别打** |
-| 轻地 | 刚介入，投入浅 | 别停，要么深入要么退 |
-| 争地 | 双方都要（名额、独家） | 抢先手，不硬抢 |
-| 交地 | 多方往来 | 别断联系 |
-| 衢地 | 多方交汇的节点 | 结盟 |
-| 重地 | 已投入很多，退不干净 | 就地取利，别恋战 |
-| 圮地 | 环境恶劣 | 快走 |
-| 围地 | 进退两难 | 找缺口，别硬拼 |
-| 死地 | 真没退路 | 拼，先确认 |
-
-**地形由五力算出**，不是凭感觉选的。改地形只能改五力，不能靠用力气。
-
----
-
-## 训练来源
-
-三类材料，每条 references 后面都标了证据级别。
+三类材料，每一篇后面都标了证据等级。
 
 | 类型 | 具体来源 | 用来干什么 |
 |---|---|---|
-| **学术实证** | Cialdini《影响力》七原则的原始实验 · Schelling《冲突的战略》承诺与威胁 · Axelrod《合作的进化》重复博弈竞赛 · Kahneman & Tversky 锚定与框架 · Crawford & Sobel (1982) cheap talk 模型 · Mintzberg 十三种组织政治游戏 · Kipnis 影响策略量表 · Yukl 效应排序 · Scott《弱者的武器》日常抵抗 · Alinsky《激进者教条》战术十三则 | 手段的权重与失效条件 |
-| **古典文本** | 《孙子兵法》九地／虚实／用间 · 《韩非子》八奸／七术／六微 · 《战国策》说客原话 · 《资治通鉴》编年案例 · 《君主论》 · 《三十六计》 · 《骗经》（明万历，骗术专著八十余则） · 《间书》（清咸丰，间谍术专书） | 结构与案例，原文可查 |
-| **真实案例** | 安然表外负债 · 水门事件掩盖成本 · Theranos 权威借用 · 麦道夫受害者辩护 · 斯德哥尔摩六天 · 王莽符命受禅 · 司马懿洛水之誓 · 曹爽高平陵 · 陈平离间范增 | 验证推论，不当装饰 |
+| **学术实证** | Cialdini《影响力》七原则的原始实验 · Schelling《冲突的战略》承诺与威胁 · Axelrod《合作的进化》重复博弈竞赛 · Kahneman & Tversky 锚定与框架 · Crawford & Sobel (1982) cheap talk 模型 · Mintzberg 十三种组织政治游戏 · Kipnis 影响策略量表 · Yukl 效应排序 · Scott《弱者的武器》 · Alinsky《激进者教条》战术十三则 | 决定每种做法的权重，和它什么时候会失效 |
+| **古典文本** | 《孙子兵法》九地／虚实／用间 · 《韩非子》八奸／七术／六微 · 《战国策》说客原话 · 《资治通鉴》编年案例 · 《君主论》 · 《三十六计》 · 《骗经》（明万历，骗术专著八十余则） · 《间书》（清咸丰，间谍术专书） | 提供结构和案例，原文可查 |
+| **真实案例** | 安然表外负债 · 水门事件掩盖成本 · Theranos 权威借用 · 麦道夫受害者为何辩护 · 斯德哥尔摩六天 · 王莽符命受禅 · 司马懿洛水之誓 · 曹爽高平陵 · 陈平离间范增 | 验证推论，不当装饰 |
 
 **一条硬规矩**。畅销书只用来提供词汇，不用来提供事实。哪句是实验结论，哪句是史料原话，哪句只是推论，分得清楚。
+
+---
+
+## 它不会做的事
+
+**四种情况它会直接说不行**
+
+```text
+涉及人身安全（家暴、跟踪、限制自由）→ 先走安全流程
+涉及违法（做假账、伪造、代持）
+目标和手段彻底矛盾，且不接受任何降档
+你实际要的是「不付任何代价」，而不是某个结果
+```
+
+**它也会说，这件事现在没有解**。这不是敷衍。有些事的答案不在怎么推，在怎么让自己先具备推得动的条件。
+
+**另外三件它不做**。不做心理治疗，不给个案法律意见，不保证结果。
 
 ---
 
@@ -177,30 +180,13 @@ Copy-Item -Recurse .\cw "$env:USERPROFILE\.agents\skills\cw"
 cw/
 ├── SKILL.md              主入口
 ├── references/
-│   ├── knowledge/        30 篇 · 机制与依据（01–29）
-│   └── practical/        31 篇 · 卡与话术（问诊、行为、场景、判定）
+│   ├── knowledge/        30 篇 · 机制与依据
+│   └── practical/        31 篇 · 卡与话术
 ├── scripts/              校验器 + 档案存储
 └── assets/               logo 与预览图
 ```
 
 改完跑 `python scripts/validate_skill.py`，0 error 才算通过。
-
----
-
-## 边界
-
-**四种情况它会直接说不行**
-
-```text
-涉及人身安全（家暴、跟踪、限制自由）→ 先走安全流程
-涉及违法（做假账、伪造、代持）
-目标与手段彻底矛盾，且不接受任何降档
-你实际要的是「不付任何代价」，而不是某个结果
-```
-
-**它也会说，这个局现在没有进攻解**。这不是敷衍。有些局的解不在怎么打，在怎么让自己先具备打的资格。
-
-**它不做的三件事**，不做心理治疗，不给个案法律意见，不保证结果。
 
 ---
 
@@ -212,7 +198,9 @@ cw/
 
 它擅长把一团乱麻拆成能判断的要素，把动作写到能做，把代价标到人头上。它不擅长给你勇气。
 
-所以它最大的价值可能不是帮你赢。是让你在动手之前，先知道自己站在哪，该用多大力，代价落在谁身上。
+所以它最大的价值可能不是帮你赢。是让你在动手之前，先知道自己站在哪，能用到多大力，代价落在谁身上。
+
+这三件事想清楚了，多数事你自己就能处理。
 
 ---
 
@@ -221,83 +209,49 @@ cw/
 
 ### What it is
 
-**Bring a situation. Leave with a plan.**
+Some situations can't be solved by reasoning with someone, and aren't worth burning the relationship over.
 
-Give it one concrete situation and it returns three things, a verdict, the steps you can take today, and a line you can actually send.
+You were taken advantage of and can't name what's wrong. You want to negotiate but don't know where to open or when to fold. Someone is playing you and every time you bring it up it sounds like you're imagining things.
 
-Not "you should communicate better." Something like, don't file it as a formal complaint, file it as a situation report, send it registered, sign your real name, end with "if any of the above is untrue, I bear the responsibility."
+Give it one concrete situation. It judges whether the thing is worth moving on, how far it can be pushed, then hands you a few steps you can take today and a line you can actually say.
 
-### What it covers
+### How it works
 
-| Your situation | What you get |
-|---|---|
-| Taken advantage of, can't name what's wrong | Whether to fight at all, and the first move for today |
-| Negotiating, don't know where to open or when to fold | Anchors, concession rhythm, where the other side must come back and defend |
-| Feels like you're being played | Seven-signal score, three hits trigger counter-measures or exit |
-| No leverage, opponent much stronger | Six must-defends, four kinds of leverage you may already hold, seven ways to build new leverage |
-| Already lost, don't know what to do first | Four-step damage control. Triage before recovery. |
-| Want someone to move your way | Five components of a setup. Miss one and it collapses. |
+You describe the situation in four lines, who you are, who they are, what's really being contested, what you want, and what you're most afraid of losing.
 
-### Three systems
+It asks three questions before answering, because what you say you want and what you actually want are often different.
 
-```text
-Intake → Read the terrain → Set the level → Clear the gates → Act
-```
+Then it returns four things. A verdict, the steps, the wording, and the cost, including who ends up carrying it.
 
-| System | Source | Use when |
-|---|---|---|
-| **Stratagem** | Sun Tzu, win without fighting | Negotiate, deter, let them back out on their own |
-| **Positioning** | Sun Tzu, seek advantage in momentum | You want to change the board |
-| **Fortify** | Sun Tzu, first make yourself unbeatable | You're already in trouble |
+It only iterates one way. You tell it what happened, it adjusts. It does not observe you.
 
-### How to ask
+### Three layers, in order
 
-Give four lines, who you are, who they are, what's really being fought over, what you want, and what you're most afraid of losing.
+First, look for a path that costs little. Negotiate, signal, let them change their own mind.
 
-It will then ask three questions before answering, because what you say you want and what you actually want are often different.
+If there isn't one, design a situation where walking the path that suits them lands them where you need them. That requires knowing what they want, what they can't lose, and how tight their clock is.
 
-The exception is urgency. Say "this has to be decided today" and it gives you an action first, questions after.
+If it has already gone wrong, stop the bleeding before anything else.
+
+The order matters more than the technique. Most people don't fail from lack of moves, they fail from starting with "how do I make them pay," which turns a negotiable situation into one that can't be closed.
 
 ### Five levels of force
 
-| Level | Move | Reversible |
-|---|---|---|
-| 1 | Don't engage | Fully |
-| 2 | One sentence | Yes |
-| 3 | Change the structure | Mostly |
-| 4A | Symmetric counter | Hard |
-| 4B | Raise their cost without accusing | Yes |
-| 5 | Ultimatum, cut off, go public | **No** |
+Not responding. One sentence. Changing the structure. A counter that lands once and stops. An ultimatum.
 
-Level 4 and above must clear the gates. The gate isn't "are you right," it's **can you survive their retaliation**. In family settings retaliation is often cutting off money. On platforms it's closing your store.
-
-### Nine terrains
-
-Scattered, Light, Contested, Open, Crossroads, Heavy, Bad, Encircled, Death.
-
-**The first three all mean "don't fight."** That's the part most people miss. They fight everywhere, then wonder why everything costs so much.
+Level four and above must clear the gate, and the gate isn't "are you right," it's **can you survive their retaliation**. In family settings retaliation is often cutting off money. On platforms it's closing your store.
 
 ### Sources
 
-Three kinds, every reference tagged with its evidence level.
-
-- **Empirical** — Cialdini's original experiments, Schelling on commitment, Axelrod's tournament, Kahneman & Tversky on anchoring, Crawford & Sobel's cheap-talk model, Mintzberg's political games, Kipnis influence scales, Scott's everyday resistance, Alinsky's rules.
-- **Classical** — *The Art of War*, *Han Feizi*, *Strategems of the Warring States*, *Zizhi Tongjian*, *The Prince*, *The Thirty-Six Stratagems*, plus two obscure Chinese works on fraud and espionage, both public domain, both read in the original.
-- **Cases** — Enron, Watergate, Theranos, Madoff, Stockholm, Wang Mang, Sima Yi.
+Empirical work from Cialdini, Schelling, Axelrod, Kahneman and Tversky, Crawford and Sobel, Mintzberg, Kipnis, Scott and Alinsky. Classical Chinese texts including *The Art of War*, *Han Feizi*, *Strategems of the Warring States*, *Zizhi Tongjian*, plus two obscure public-domain works on fraud and espionage read in the original. Real cases from Enron, Watergate, Theranos, Madoff, Stockholm, Wang Mang and Sima Yi.
 
 Best-sellers are used for vocabulary only, never for facts.
 
 ### Limits
 
-Not field-tested. Every test was a simulated scenario plus an outside reviewer, with no real user closing the loop on outcomes.
+Not field-tested. Every test was a simulated scenario plus an outside reviewer, with no real user closing the loop.
 
 It's good at turning a mess into decidable parts. It can't give you courage.
-
-### Install
-
-```bash
-cp -r cw ~/.agents/skills/cw
-```
 
 </details>
 
