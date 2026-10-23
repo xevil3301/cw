@@ -1,5 +1,5 @@
 #!/usr/bin/env python3
-"""Store and audit opponent profiles for the chuwu skill.
+"""Store and audit opponent profiles for the cw skill.
 
 Design notes
 ------------
@@ -178,7 +178,7 @@ def cmd_audit(_: argparse.Namespace) -> int:
 
 
 def main() -> int:
-    parser = argparse.ArgumentParser(description="chuwu opponent profile store")
+    parser = argparse.ArgumentParser(description="cw opponent profile store")
     sub = parser.add_subparsers(dest="cmd", required=True)
 
     sub.add_parser("list", help="list all profiles").set_defaults(func=cmd_list)

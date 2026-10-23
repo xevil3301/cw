@@ -1,7 +1,7 @@
-# 楚乌 · chuwu
+# 楚乌 · cw
 
 <p align="center">
-  <img src="assets/logo.png" width="220" alt="chuwu">
+  <img src="assets/logo.png" width="220" alt="cw">
 </p>
 
 **一个「带场景来、拿方案走」的工具。** 不是陪伴型助手，不做实时观察，不追踪你的生活。
@@ -71,16 +71,16 @@
 ### DeepSeek Harness / Codex / Claude 系（技能目录扫描）
 
 ```bash
-cp -r chuwu ~/.agents/skills/chuwu
+cp -r cw ~/.agents/skills/cw
 ```
 
 Windows:
 
 ```powershell
-Copy-Item -Recurse .\chuwu "$env:USERPROFILE\.agents\skills\chuwu"
+Copy-Item -Recurse .\cw "$env:USERPROFILE\.agents\skills\cw"
 ```
 
-安装后在技能列表里应出现 `chuwu`。触发词：楚乌、局面、筹码、谈判、组织政治、被操控、话术、以弱胜强。
+安装后在技能列表里应出现 `cw`。触发词：楚乌、局面、筹码、谈判、组织政治、被操控、话术、以弱胜强。
 
 ### 其他工具
 
@@ -92,7 +92,7 @@ Copy-Item -Recurse .\chuwu "$env:USERPROFILE\.agents\skills\chuwu"
 ## 结构
 
 ```text
-chuwu/
+cw/
 ├── SKILL.md                  # 主入口（150 行 / 3.3 千字符）
 ├── agents/openai.yaml        # 跨工具接口描述
 ├── references/

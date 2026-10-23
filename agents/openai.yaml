@@ -1,4 +1,4 @@
 interface:
   display_name: "楚乌"
   short_description: "建模权力局面，设计影响力路径，拆解操控并推演后手"
-  default_prompt: "使用 $chuwu 帮我建模当前局面：谁掌握什么、我有哪些筹码、下一步怎么走。"
+  default_prompt: "使用 $cw 帮我建模当前局面：谁掌握什么、我有哪些筹码、下一步怎么走。"

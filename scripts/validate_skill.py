@@ -1,5 +1,5 @@
 #!/usr/bin/env python3
-"""Validate the chuwu skill package without third-party dependencies.
+"""Validate the cw skill package without third-party dependencies.
 
 Usage:
     python scripts/validate_skill.py            # strict: missing files are errors
@@ -143,7 +143,7 @@ def validate_frontmatter() -> None:
     name = name_match.group(1).strip() if name_match else ""
     description = description_match.group(1).strip() if description_match else ""
 
-    if name != "chuwu" or not re.fullmatch(r"[a-z0-9-]{1,64}", name):
+    if name != "cw" or not re.fullmatch(r"[a-z0-9-]{1,64}", name):
         ERRORS.append(f"invalid skill name: {name!r}")
     if not description:
         ERRORS.append("description is empty")
@@ -198,7 +198,7 @@ def validate_leaks() -> None:
 
 
 def main() -> int:
-    parser = argparse.ArgumentParser(description="Validate the chuwu skill package.")
+    parser = argparse.ArgumentParser(description="Validate the cw skill package.")
     parser.add_argument("--draft", action="store_true", help="downgrade missing files to warnings")
     args = parser.parse_args()
     strict = not args.draft
