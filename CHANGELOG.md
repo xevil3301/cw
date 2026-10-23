@@ -2,6 +2,23 @@
 
 本文件记录 chuwu skill 的版本变更。版本号遵循 `MAJOR.MINOR.PATCH`。
 
+## [2.1.3] — 项目简介与社交预览
+
+### 仓库信息
+
+- **简介**：楚乌（cw）· 带场景来、拿方案走的谋略工具。先问诊再给方案——九地判该不该打，
+  力度五档定用多大力，每份方案标清代价落在谁身上。61 篇 / 约 12.9 万字。
+- **标签**：agent-skills · chinese · strategy · decision-making · negotiation ·
+  game-theory · power-dynamics · risk-assessment · llm · prompt
+
+### 新增 · ssets/social-preview.png（1280×640）
+
+GitHub 社交预览图：左侧圆角 logo，右侧「楚乌 / cw / 带场景来，拿方案走 / 谋攻·造势·守形」。
+
+**⚠ 需要手动设置**：GitHub 没有开放 social preview 的 API，须在
+Settings → Social preview → Upload an image 上传这张图。
+
+---
 ## [2.1.2] — logo
 
 ### 换用 AI 生成的新标识
